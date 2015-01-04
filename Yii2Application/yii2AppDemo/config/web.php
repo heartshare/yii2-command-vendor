@@ -1,10 +1,10 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
-
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
+    'vendorPath'=>realpath(__DIR__."/../../yii2Composer"),
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
